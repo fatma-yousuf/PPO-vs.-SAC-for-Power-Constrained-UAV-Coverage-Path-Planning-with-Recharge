@@ -1,4 +1,0 @@
-[submodule "example/models"]
-	path = example/models
-	url = https://github.com/theilem/uavSim_models.git
-	branch = main
