@@ -1,6 +1,0 @@
-﻿content = open('utils.py', 'r', encoding='utf-8').read()
-content = content.replace('params["type"] if "type" in params.keys()', 'params["type"] if isinstance(params, dict) and "type" in params')
-content = content.replace('params["params"] if "params" in params.keys()', 'params["params"] if isinstance(params, dict) and "params" in params')
-content = content.replace('if "params" in params.keys():', 'if isinstance(params, dict) and "params" in params:')
-open('utils.py', 'w', encoding='utf-8').write(content)
-print('Done')
